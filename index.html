@@ -45,13 +45,23 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!-- MATERIAL ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
     <title>Eddie HomePage</title>
 
     <style>
-      /* 
-font-family: 'Heebo', sans-serif;
-font-family: 'Poppins', sans-serif; */
-
       * {
         margin: 0;
         padding: 0;
@@ -62,8 +72,23 @@ font-family: 'Poppins', sans-serif; */
         display: grid;
         grid-template-rows: 5rem, 1fr, 7rem;
       }
+
       .name {
         font-family: "Heebo", sans-serif;
+      }
+      /* NAVBAR STYLES */
+
+      .navbar-toggler:focus,
+      .navbar-toggler:active {
+        outline: 0;
+      }
+
+      .navbar-toggler.collapsed .close-icon {
+        display: none;
+      }
+
+      .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+        display: inline;
       }
 
       nav .name {
@@ -73,12 +98,306 @@ font-family: 'Poppins', sans-serif; */
         line-height: 35px;
         color: #333333;
       }
+
+      /* MAIN STYLES */
+      main {
+        height: 100%;
+        padding: 3rem 1rem;
+      }
+
+      article {
+        margin: 3rem 0;
+        display: grid;
+      }
+
+      .title {
+        margin-bottom: 3rem;
+        max-width: 543px;
+      }
+      /* ARTICLE 1 STYLES */
+
+      .intro {
+        justify-content: center;
+      }
+      .intro .margin-section {
+        padding: 0 1rem;
+      }
+      .intro label {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #2d9cdb;
+      }
+      h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+      }
+
+      .intro p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #4f4f4f;
+      }
+      .hero-photo {
+        display: flex;
+      }
+      .cont{
+        max-width: 1480px;
+      }
+      .hero-photo img {
+        min-height: 145px;
+        max-height: 354px;
+        width: 100%;
+        max-width: 1320px;
+        margin-inline: auto;
+        border-radius: 18px;
+      }
+
+      .margin-section {
+        margin: 1rem 2rem;
+        max-width: 366px;
+      }
+
+      /* ARTICLE 2 STYLES */
+      .services {
+        justify-content: center;
+      }
+      .skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+      }
+
+      .skill {
+        background: #ffffff;
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+        border-radius: 24px;
+        display: grid;
+        padding: 3rem 2rem;
+        align-content: space-between;
+        min-width: 341px;
+        max-width: 341px;
+        min-height: 422px;
+      }
+
+      .skill .icon {
+        width: 67px;
+        height: 67px;
+        border-radius: 16px;
+        display: grid;
+        place-content: center;
+        color: white;
+      }
+
+      .icon1 {
+        background: #2d9cdb;
+      }
+      .icon2 {
+        background: #27ae60;
+      }
+      .icon3 {
+        background: #eb5757;
+      }
+      .skill h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+
+        color: #333333;
+      }
+      .skill p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4f4f4f;
+      }
+
+      .skill button {
+        width: 116px;
+        height: 42px;
+        border: none;
+        background: #e0e0e0;
+        border-radius: 12px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #828282;
+      }
+
+      .skill:nth-child(2) button {
+        background: #2d9cdb;
+        color: white;
+      }
+
+      /* ARTICLE3 STYLES */
+
+
+
+      .works {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+      }
+
+      .works div:nth-child(2) {
+        margin-top: -120px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #2d9cdb;
+      }
+      .arrow-right:after {
+        content: "";
+        display: inline-block !important;
+        width: 0;
+        height: 0;
+        border-left: 4px solid #2d9cdb;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        vertical-align: middle;
+      }
+
+      .arrow-right:before {
+        width: 10px;
+        height: 1.5px;
+        background: #2d9cdb;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .work-card {
+        margin-bottom: 10rem;
+        max-width: 545px;
+      }
+      .work-card img {
+        border-radius: 12px;
+        width: 350px;
+      }
+  
+      .work-card p {
+        display: inline;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #828282;
+      }
+      .work-card h4 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #333333;
+      }
+      /* ARTICLE 4 STYLES */
+      .team {
+        justify-content: center;
+      }
+      .title-team {
+        padding: 0 minmax(0 10rem);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .title-team .words {
+        display: grid;
+        gap: 1rem;
+      }
+      .title-team label {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #eb5757;
+      }
+      .title-team h2 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 54px;
+        color: #333333;
+      }
+      .title-team p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4f4f4f;
+      }
+
+      .photos div {
+        display: grid;
+        gap: 1em;
+      }
+      .photos {
+        display: grid;
+        gap: 1.5em;
+        padding: 1em 0;
+        grid-template-columns: 1fr 1fr;
+      }
+      .photos img {
+        width: 100%;
+        border-radius: 24px;
+      }
+      .photos img:nth-child(1) {
+        align-self: center;
+        max-width: 320px;
+      }
+      .photos div img:nth-child(1) {
+        width: 84%;
+        max-width: 260px;
+      }
+      .photos div img:nth-child(2) {
+        max-width: 290px;
+      }
+      .quote p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        max-width: 890px;
+        text-align: center;
+      }
+
+      #quotePerson {
+        display: flex;
+        justify-self: center;
+        gap: 2rem;
+      }
+      #quotePerson img {
+        width: 82px;
+        height: 82px;
+        border-radius: 12px;
+      }
+      #quoptePerson strong {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+      }
+      #quotePerson p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #828282;
+      }
+      /* FOOTER STYLES */
+
       footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
         width: 100%;
         background: #100e1d;
+        padding: 1.5rem;
       }
       footer a {
         text-decoration: none;
@@ -123,6 +442,7 @@ font-family: 'Poppins', sans-serif; */
         width: 291px;
         height: 47px;
         background: #f2f2f2;
+        border: none;
         border-radius: 12px;
       }
 
@@ -141,11 +461,66 @@ font-family: 'Poppins', sans-serif; */
       .joinbtn:hover {
         color: white;
       }
+
+      @media screen and (min-width: 990px) {
+        nav .name {
+          font-weight: 800;
+          font-size: 36px;
+          line-height: 53px;
+        }
+        .nav-item {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+        }
+        .services,
+        .portfolio,
+        .team,
+        .intro {
+        /* justify-content: left; */
+        margin-inline: auto;
+      }
+        .intro label {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 72px;
+        }
+        .intro p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        .mailLbl {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+        .margin-section {
+          max-width: 566px;
+        }
+
+        .skills {
+        justify-content: space-evenly;
+        }    
+        .works{
+          justify-content: space-evenly;
+        }
+        .work-card img {
+        border-radius: 12px;
+        width: 545px;
+      }
+      }
     </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light p-4 col-12">
+    <header class="row">
+      <nav class="navbar navbar-expand-lg navbar-light p-4 px-5 mx-auto col-12 cont">
         <a class="navbar-brand name" href="./"> Eddie </a>
         <button
           class="navbar-toggler collapsed border-0"
@@ -178,11 +553,158 @@ font-family: 'Poppins', sans-serif; */
       </nav>
     </header>
 
-    <main></main>
+    <main class="cont mx-auto">
+      <article class="intro row">
+        <section class="margin-section">
+          <label for="title"> Unhappy with your website?</label>
+          <h2 name="title">We create beautiful and fast web services</h2>
+        </section>
 
-    <footer class="text-white">
+        <section class="hero-photo">
+          <img src="./heroImage.jpg" alt="working" />
+        </section>
+
+        <section class="hero-detail margin-section">
+          <h3>Story, emotion and purpose</h3>
+          <p>
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <form class="join-form" action="">
+            <label class="mailLbl" for="email">Want us to contact you?</label>
+            <div class="input_cont">
+              <input id="email" type="text" placeholder="Email" />
+              <button type="submit" class="joinbtn">Join</button>
+            </div>
+          </form>
+        </section>
+      </article>
+
+      <article class="services row">
+        <section class="title">
+          <h2 class="margin-section">We offer high demand services</h2>
+        </section>
+        <section class="skills">
+          <div class="skill">
+            <div class="icon icon1">
+              <span class="material-symbols-outlined"> edit </span>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button>Get started</button>
+          </div>
+
+          <div class="skill">
+            <div class="icon icon2">
+              <span class="material-symbols-outlined"> code </span>
+            </div>
+            <h3>Front End</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button>Get started</button>
+          </div>
+
+          <div class="skill">
+            <div class="icon icon3">
+              <span class="material-symbols-outlined"> storage </span>
+            </div>
+            <h3>Back End</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button>Get started</button>
+          </div>
+        </section>
+      </article>
+
+      <article class="portfolio row">
+        <section class="margin-section">
+          <h2 class="title">Good design means good business</h2>
+        </section>
+
+        <section class="works ms-5">
+
+          <div>
+            <div class="work-card">
+              <img src="./smarthome.jpg" alt="" />
+              <div class="mt-2">
+                <p>Full stack application</p>
+                <h4>Smart home dashboard</h4>
+              </div>
+            </div>
+            <div class="work-card">
+              <img src="./onboard.png" alt="" />
+              <div class="mt-2">
+                <p>UX/UI design</p>
+                <h4>Onboard application</h4>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="work-card">
+              <img src="./booking.png" alt="" />
+              <div class="mt-2">
+                <p>Mobile application</p>
+                <h4>Booking system</h4>
+              </div>
+            </div>
+            <div class="work-card">
+              <img src="./juice-product.png" alt="" />
+              <div class="mt-2">
+                
+                <p>Front End application</p>
+                <h4>Juice product homepage</h4>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <div><a href="#"> see more</a> <span class="arrow-right"></span></div>
+      </article>
+
+      <article class="team row">
+        <section class="title-team">
+          <div class="words">
+            <label for="title">Meet the team</label>
+            <h2 name="title">We are chilled and a laidback team</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="photos">
+            <img src="./person3.png" alt="person3" />
+            <div>
+              <img src="./person1.png" alt="person1" />
+              <img src="./person2.png" alt="person2" />
+            </div>
+          </div>
+        </section>
+        <section class="quote d-flex flex-column mt-5">
+          <p class="mx-auto">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </p>
+          <div class="mx-auto"   id="quotePerson">
+            <img  src="./person4.png" alt="person4" />
+            <div class="qPName">
+              <strong>Carlos Tran</strong>
+              <p>The Decorate Gatsby</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="text-white row">
       <!-- Grid container -->
-      <div class="container p-4">
+      <div class="container p-4 cont">
         <!--Grid row-->
         <div class="row">
           <!--Grid column-->
@@ -220,7 +742,7 @@ font-family: 'Poppins', sans-serif; */
 
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <form action="">
+            <form class="join-form" action="">
               <label class="mailLbl" for="email">Want us to contact you?</label>
               <div class="input_cont">
                 <input id="email" type="text" placeholder="Email" />
@@ -235,11 +757,10 @@ font-family: 'Poppins', sans-serif; */
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
+      <div>
+        <p class="d-flex justify-content-center mt-5">
+          created by Gabrielsk - devChallenges.io
+        </p>
       </div>
       <!-- Copyright -->
     </footer>
